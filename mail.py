@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from email import encoders
 
 sendingUser='dpotter@scips.com'
-sendingPassword='xxxx'
+sendingPassword='Kathar!na1959'
 toMail='linux@davidlpotter.com'
 cc='hdroadglide@gmail.com'  # not used yet - not sure it ever has to be used
 subject="Python Test Email"
@@ -28,11 +28,6 @@ msg['Subject'] = 'Sending emails from Python'
 def send_email():
     try:    
         # Create message container - the correct MIME type is multipart/alternative.
-        # msg = MIMEMultipart('alternative')
-        
-        # msg['From'] = sendingUser
-        # msg['To'] = toMail        
-        # msg['Subject'] = subject
 
         fp = open(file, 'rb')
         part = MIMEBase('application','vnd.ms-excel')
@@ -43,8 +38,8 @@ def send_email():
         part.add_header('Content-Disposition', 'attachment', filename=fileDescription)
         msg.attach(part)
         # see the code below to use template as body
-        body_text = "Python says Hi this is body text of email"
-        body_html = "<p><h1>Python says Hi this is body text of email</h1></p>"
+        body_text = "Python says Hi this is the body for the text of email"
+        body_html = "<p><h1>Python says Hi this is the body for the text of email</h1></p>"
         
         # Create the body of the message (a plain-text and an HTML version).
         # Record the MIME types of both parts - text/plain and text/html.
