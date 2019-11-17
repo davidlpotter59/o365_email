@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from email import encoders
 
 sendingUser='dpotter@scips.com'
-sendingPassword='Kathar!na1959'
+sendingPassword='xxxx'
 toMail='linux@davidlpotter.com'
 cc='hdroadglide@gmail.com'  # not used yet - not sure it ever has to be used
 subject="Python Test Email"
